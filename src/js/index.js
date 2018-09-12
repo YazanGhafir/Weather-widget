@@ -84,7 +84,7 @@ function updateStatus() {
         var select = document.getElementById("city");
         var city = select.options[select.selectedIndex].value;
         var key = "51f9896e7da56bb1d378c17a058c1818";
-        var url = "https://openweathermap.org/data/2.5/weather?q=" + city + ",uk&appid=b6907d289e10d714a6e88b30761fae22";
+        var url = "https://openweathermap.org/data/2.5/weather?q=" + city + "&appid=b6907d289e10d714a6e88b30761fae22";
         request.open("GET", url);
 
         request.onload = function () {
