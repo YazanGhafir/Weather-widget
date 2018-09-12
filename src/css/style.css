@@ -1,0 +1,37 @@
+body {
+  font-family: 'Bree Serif', serif;
+  color: #1b212b;
+  line-height: 21px;
+}
+h1 {
+  text-align: center;
+}
+fieldset {
+  border: 1px solid #D8D8D8;
+  border-radius: 4px;
+  /* padding: 5px 20px; */
+  margin: auto;
+  margin-bottom: 15px;
+  width: 850px;
+  background-color: #E5E5E5;
+  /* box-shadow: 0px 0px 5px 3px #c9c9c9, 0px 0px 5px 3px #c9c9c9 inset; */
+}
+.container {
+  border: 1px solid #D8D8D8;
+  width: 900px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 4px;
+  padding: 10px 20px;
+  background-color: #fff;
+  /* box-shadow: 0px 0px 5px 4px #c9c9c9, 0px 0px 5px 4px #c9c9c9 inset; */
+}
+#fieldset-container {
+  min-height: 360px;
+}
+select {
+  margin-bottom: 10px;
+}
+legend {
+  font-size: 20px;
+}

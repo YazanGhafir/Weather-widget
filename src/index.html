@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>OpenWeatherMap API</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="author" content="Yazan Ghafir">
+</head>
+
+<body>
+	<div class="container">
+		<h1>weather application</h1>
+		<fieldset id="fieldset-stad">
+			<legend>Select city</legend>
+			<select id="city" onchange="updateStatus();">
+				<option value="" disabled selected>Select city</option>
+				<option value="Stockholm">Stockholm</option>
+				<option value="London">London</option>
+				<option value="Uppsala">Uppsala</option>
+				<option value="Umeå">Umeå</option>
+				<option value="Ulricehamn">Ulricehamn</option>
+				<option value="Borås">Borås</option>
+				<option value="Uddevala">Uddevala</option>
+				<option value="Jönköping">Jönköping</option>
+				<option value="Helsinborg">Helsinborg</option>
+				<option value="Kalmar">Kalmar</option>
+			</select>
+		</fieldset>
+		<fieldset id="fieldset-container">
+			<legend>The weather in
+				<span id="city_name">..</span> at
+				<span id="full_date">..</span>
+			</legend>
+			<table>
+				<tr>
+					<td>
+						<fieldset id="description_field">
+							<legend>Description</legend>
+							<p><span id="description">...</span></p>
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset id="temperature_field">
+							<legend>Temperature</legend>
+							<p>Actual temperature:
+								<span id="temp_actual">...</span> &#176;C</p>
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset id="wind_field">
+							<legend>Wind</legend>
+							<p>Speed:
+								<span id="wind_speed">...</span> km/h
+							</p>
+							<p>Degrees:
+								<span id="wind_degrees">...</span> &#176;
+							</p>
+							<p>Direction:
+								<span id="wind_direction">...</span>
+							</p>
+						</fieldset>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+</html>
+
+
