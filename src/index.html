@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>OpenWeatherMap API</title>
 	<meta charset="utf-8">
@@ -9,14 +8,13 @@
 	<meta name="author" content="Yazan Ghafir">
 </head>
 
-<body>
+<body onload="updateStatus();">
 	<div class="container">
 		<h1>weather application</h1>
 		<fieldset id="fieldset-stad">
 			<legend>Select city</legend>
 			<select id="city" onchange="updateStatus();">
-				<option value="" disabled selected>Select city</option>
-				<option value="Stockholm">Stockholm</option>
+				<option value="Stockholm" selected>Stockholm</option>
 				<option value="Uppsala">Uppsala</option>
 				<option value="Malmö">Malmö</option>
 				<option value="Svenljunga">Svenljunga</option>
